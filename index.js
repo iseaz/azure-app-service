@@ -12,4 +12,8 @@ app.get('/webhook', async (req, res) => {
 	res.json(data)
 })
 
+app.get('/about', (req, res) => {
+	res.json({ message: 'about page' })
+})
+
 app.listen(process.env.PORT || 3000, () => console.log('app is running'))
